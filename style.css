@@ -1,0 +1,58 @@
+/*Reset do css da página*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Estlizações globais*/
+article img {
+    height: 30px;
+    width: 30px;
+}
+
+/*Estilos base - mobile - até 480px*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+article{
+    width: 90%;
+    height: auto;
+    border: 2px solid blue;
+    border-radius: 10px;
+    padding: 15px;
+    gap: 20px;
+}
+
+article > div:first-child{ /*Estilo aplicado apenas a primeira div dentro do article*/
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container-user {
+    display: flex;
+    gap: 10px;
+}
+
+.container-postagem {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container-postagem p {
+    font-size: 30px;
+}
+
+.container-names {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
