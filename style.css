@@ -1,3 +1,13 @@
+/*Variaveis*/
+:root {
+    --cor-de-fundo: #e1e3db;
+    --cor-post-1: #161917;
+    --cor-post-2: #70160e;
+    --cor-post-3: #fff;
+    --cor-post-4: #9e0004;
+    --cor-post-5: #fa6900; 
+}
+
 /*Reset do css da página*/
 *{
     padding: 0;
@@ -10,23 +20,49 @@ article img {
     height: 30px;
     width: 30px;
 }
+body { /*Estilização da cor de fundo*/
+    background-color: var(--cor-de-fundo);
+}
+
+main {
+    margin: 60px 10px 60px 10px;
+}
+
+/*Cores dos posts*/
+.cor_1{
+    background-color: var(--cor-post-1);
+}
+.cor_2{
+    background-color: var(--cor-post-2);
+}
+.cor_3{
+    background-color: var(--cor-post-3);
+}
+.cor_4{
+    background-color: var(--cor-post-4);
+}
+.cor_5{
+    background-color: var(--cor-post-5);
+}
+.cor_1, .cor_2, .cor_4, .cor_5 {
+    color: white;
+}
+
 
 /*Estilos base - mobile - até 480px*/
-
-.container {
+.container { /*Container principal, que contém todos os posts*/
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 60px;
 }
 
-article{
+article { /*Estilo para cada Card*/
     width: 90%;
     height: auto;
-    border: 2px solid blue;
     border-radius: 10px;
-    padding: 15px;
+    padding: 55px;
     gap: 20px;
 }
 
@@ -36,23 +72,60 @@ article > div:first-child{ /*Estilo aplicado apenas a primeira div dentro do art
     gap: 20px;
 }
 
-.container-user {
+.container-user { /*Container com img de perfil e nome*/
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 
-.container-postagem {
+.container-postagem { /* Container com titulo de comentario*/
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.container-postagem p {
-    font-size: 30px;
+.container-postagem h2 { /*Estilo do titulo do post*/
+    font-size: 35px;
+    margin-bottom: 20px;
 }
 
-.container-names {
+.container-postagem p { /*Comentário do post*/
+    font-size: 25px;
+}
+
+.container-names { /*Container com o nome e profissão do usuário*/
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
+}
+
+/*Telas a partir de 768px - Tables*/
+@media screen and (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        justify-content: space-evenly;
+    }
+}
+
+/*Telas a partir de 1024px - Notebooks*/
+@media screen and (min-width: 1024px) {
+    .container {
+        gap: 10px;
+    }
+    article {
+        min-width: 300px;
+        max-width: 90%;
+        height: auto;
+        flex-grow: 1;
+        flex-basis: 400px;
+    }
+
+    .card2 {
+        flex-grow: 2;
+    }
+
+    .card3 {
+        flex-grow: 2;
+    }
 }
