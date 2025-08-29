@@ -48,6 +48,32 @@ main {
     color: white;
 }
 
+/* Animação do Loader*/
+.loader {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 220px;
+    height: 22px;
+    border-radius: 20px;
+    color: #514b82;
+    border: 2px solid;
+}
+.loader::before {
+    content: "";
+    position: absolute;
+    margin: 2px;
+    inset: 0 100% 0 0;
+    border-radius: inherit;
+    background: currentColor;
+    animation: l6 2s infinite;
+}
+@keyframes l6 {
+    100% {inset:0}
+}
+
+
 
 /*Estilos base - mobile - até 480px*/
 .container { /*Container principal, que contém todos os posts*/

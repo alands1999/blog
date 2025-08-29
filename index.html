@@ -6,86 +6,12 @@
     <title>Blog</title>
     <meta name="description" content="Blog de mensagens aleatórias">
     <link rel="stylesheet" href="style.css">
+    <script type="module" src="./scripts/funcoes.js" defer></script>
 </head>
 <body>
     <main>
-        <section class="container">
-            <article class="card1 cor_1">
-                <div>
-                    <div class="container-user">
-                        <img src="./assets/user.png" alt="icone de usuário" title="Imagem do usuário">
-                        <div class="container-names">
-                            <p>Laura Mendes</p>
-                            <p>Designer Gráfica</p>
-                        </div>
-                    </div>
-                    <div class="container-postagem">
-                        <h2>Como o design influencia na forma como percebemos marcas e produtos no dia a dia</h2>
-                        <p>O design vai muito além da estética: ele molda nossas escolhas, influencia emoções e cria conexões com as marcas. Um bom design gráfico transmite confiança, valoriza o produto e gera identificação imediata com o público. Pensar no design é pensar na experiência de quem consome.</p>
-                    </div>
-                </div>
-            </article>
-            <article class="card2 cor_2">
-                <div>
-                    <div class="container-user">
-                        <img src="./assets/user.png" alt="icone de usuário" title="Imagem do usuário">
-                        <div class="container-names">
-                            <p>Rafael Oliveira</p>
-                            <p>Desenvolvedor Front-end</p>
-                        </div>
-                    </div>
-                    <div class="container-postagem">
-                        <h2>Os desafios de aprender novas tecnologias e manter a produtividade no ambiente de trabalho</h2>
-                        <p>A área de tecnologia exige atualização constante. Frameworks, bibliotecas e novas linguagens surgem todos os dias, e é fácil se sentir sobrecarregado. Encontrar equilíbrio entre aprender e aplicar é essencial. A chave é aprender o suficiente para resolver problemas reais sem perder o foco da entrega.</p>
-                    </div>
-                </div>
-            </article>
-            <article class="card3 cor_3">
-                <div>
-                    <div class="container-user">
-                        <img src="./assets/user.png" alt="icone de usuário" title="Imagem do usuário">
-                        <div class="container-names">
-                            <p>Camila Ferreira</p>
-                            <p>Médica Pediatra</p>
-                        </div>
-                    </div>
-                    <div class="container-postagem">
-                        <h2>A importância de estabelecer rotinas saudáveis para crianças em tempos digitais</h2>
-                        <p>Com o acesso cada vez maior a dispositivos eletrônicos, criar hábitos saudáveis para crianças é um grande desafio. Estabelecer rotinas de sono, alimentação e tempo de tela equilibrado garante desenvolvimento físico e emocional mais saudável. Limites claros ajudam na convivência familiar e na qualidade de vida.</p>
-                    </div>
-                </div>
-            </article>
-            <article class="card4 cor_4">
-                <div>
-                    <div class="container-user">
-                        <img src="./assets/user.png" alt="icone de usuário" title="Imagem do usuário">
-                        <div class="container-names">
-                            <p>Thiago Santos</p>
-                            <p>Professor de História</p>
-                        </div>
-                    </div>
-                    <div class="container-postagem">
-                        <h2>Por que estudar história é essencial para compreender os dilemas sociais e políticos do presente</h2>
-                        <p>A história não é apenas sobre o passado. Ela ajuda a entender nossas origens, nossas escolhas e os erros já cometidos. Ao conhecer o que veio antes, conseguimos interpretar melhor os acontecimentos atuais e construir alternativas mais conscientes para o futuro. Estudar história é, acima de tudo, aprender a refletir.</p>
-                    </div>
-                </div>
-            </article>
-            <article class="card5 cor_5">
-                <div>
-                    <div class="container-user">
-                        <img src="./assets/user.png" alt="icone de usuário" title="Imagem do usuário">
-                        <div class="container-names">
-                            <p>Beatriz Lima</p>
-                            <p>Engenheira Ambiental</p>
-                        </div>
-                    </div>
-                    <div class="container-postagem">
-                        <h2>Sustentabilidade urbana: como pequenas atitudes individuais podem transformar grandes cidades</h2>
-                        <p>O impacto ambiental das cidades cresce a cada ano. Mas pequenas mudanças, como separar o lixo, reduzir o uso de plásticos e optar pelo transporte coletivo, já trazem resultados significativos. A soma das escolhas individuais tem poder transformador, e pode tornar os centros urbanos mais verdes e sustentáveis.</p>
-                    </div>
-                </div>
-            </article>
-        </section>
+        <div id="loader" class="loader" style="display: none;"></div> <!-- Div que contém a animação de loader-->
+        <section class="container" id="container_principal" style="visibility: hidden;"></section>
     </main>
     
 </body>
